@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" rel='stylesheet' type='text/css'></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="row">
+        <div class="col-md-6">
+      <div id="break-label">Break Length</div>
+      <div id="break-length">5</div>
+      <button id="break-increment" onClick = "incOrDec('increase-break')"><i class="fa fa-arrow-up fa-2x"></i></button>
+      <button id="break-decrement" onClick = "incOrDec('decrease-break')"><i class="fa fa-arrow-down fa-2x"></i></button>
+        </div>
+        <div class="col-md-6">
+      <div id="session-label">Session Length</div>
+      <div id="session-length">25</div>
+      <button id="session-increment" onClick = "incOrDec('increase-session');"><i class="fa fa-arrow-up fa-2x"></i></button>
+      <button id="session-decrement" onClick = "incOrDec('decrease-session')"><i class="fa fa-arrow-down fa-2x"></i></button>
+        </div>
+      </div>
+      <div id="timer-label">Session</div>
+      <div id="time-left">25:00</div>
+      <button id="start_stop" onClick = "startStop();">
+        <i class="fa fa-play fa-2x"></i>
+        <i class="fa fa-pause fa-2x"></i>
+        </button>
+      <button id="reset" onClick = "reset();"><i class="fa fa-refresh fa-2x"></i></button>
+      <audio id= "beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+    </body>
+    <script src="index.js"></script>
+</html>
